@@ -40,6 +40,8 @@ print(wheel)  # Выводит информацию о колесах
 1. Клонируйте репозиторий:
 ```
    git clone https://github.com/DianaSW535/management-system-car-manufacturing-.git
+```
+```
    cd management-system-car-manufacturing-
 ```
 2. Убедитесь, что у вас установлен Python 3.x.
