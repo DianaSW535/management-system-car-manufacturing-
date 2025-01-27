@@ -240,11 +240,12 @@ class Wheel:
         """
         return f'Диаметр колеса: {wheel.diameter.value}, резина - {wheel.type_of_rubber.value}\n' * 4
 
-doctest.testmod()
+if __name__ == '__main__':
 
-engine = Engine(max_power=MaxPower(150), fuel_type=FuelType.DIESEL)
-print(engine)
-car_body = CarBody(body_type=BodyType('хетчбэк'), number_of_doors=Doors(value=4))
-print(car_body)
-wheel = Wheel(diameter=Diameter(45), type_of_rubber=RubberType(value='летняя'))
-print(wheel)
+    doctest.testmod()
+    engine = Engine(max_power=MaxPower(150), fuel_type=FuelType.DIESEL)
+    print(engine)
+    car_body = CarBody(body_type=BodyType('хетчбэк'), number_of_doors=Doors(value=4))
+    print(car_body)
+    wheel = Wheel(diameter=Diameter(45), type_of_rubber=RubberType(value='летняя'))
+    print(wheel)
